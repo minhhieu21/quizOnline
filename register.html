@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Đăng kí tài khoản</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js"></script> -->
+    <script src="/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/angular-route.js"></script>
+    <script src="/js/login.js"></script>
+    <link rel="stylesheet" href="css/poly.css">
+    <style>
+        input.ng-invalid {
+            color: red;
+        }
+    </style>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body ng-app="myapp" ng-controller="myctrl">
+    <section class="pt-5">
+        <div class="container">
+            <div class="head pb-5">
+                <div class="container py-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="font-weight-light text-center py-3">ĐĂNG KÍ TÀI KHOẢN</h1>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <di v class="row pt-3">
+                                        <div class="col-lg-10 col-md-9 col-sm-9 col-9">
+                                            <img src="images/shutterstock_1214717467-900x506.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </di>
+
+                                    <div class="row pt-3">
+                                        <div class="col-lg-1 offset-1 col-md-2 col-sm-2 col-2">
+                                            <span style="font-size: 25px; color: aquamarine;"><i class="fas fa-location-crosshairs"></i></span>
+                                        </div>
+
+                                        <div class="col-lg-10 col-md-9 col-sm-9 col-9">
+                                            <h3 class="font-weight-light">FPT EDUCATION</h3>
+                                            <p class="text-info">Trường cao đẳng Foly Polytechnich Đà Nẵng <br> +47 736 8129 812 <br> (0236) 3710 999</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <form name="formdk">
+                                        <div class="row">
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <label>Họ và tên</label>
+                                                <input type="text" class="form-control" name="fullname" ng-model="st.fullname" placeholder="Họ và tên">
+                                                <span ng-show="formdk.fullname.$invalid" style="font-size: 10px; color: red;">Vui lòng nhập vào trường này</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-lg-6 col-md-12 col-sm-12 col-12">
+                                                <label>Tên đăng nhập</label>
+                                                <input type="text" class="form-control" name="name" ng-model="st.name" placeholder="Tên đăng nhập" required>
+                                                <span ng-show="formdk.name.$invalid" style="font-size: 10px; color: red;">Vui lòng nhập vào trường này!</span>
+                                            </div>
+
+                                            <div class="form-group col-lg-6 col-md-12 col-sm-12 col-12">
+                                                <label>Mật khẩu</label>
+                                                <input type="password" class="form-control" name="pass" ng-model="st.pass" minlength="6" maxlength="30" placeholder="Mật khẩu" required>
+                                                <span ng-show="formdk.pass.$invalid" style="font-size: 10px; color: red;">Password phải nhiều hơn 6 kí tự!</span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <label>Email</label>
+                                                <input type="email" class="form-control" name="email" ng-model="st.email" placeholder="Email">
+                                                <span ng-show="formdk.email.$invalid" style="font-size: 10px; color: red;">Không đúng định dạng email!</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-lg-6 col-md-12 col-sm-12 col-12">
+                                                <label>Giới tính</label>
+                                                <div class="input-group form-check form-check-inline">
+                                                    <label for="male" class="form-check-label">
+                                                        <input type="radio" id="male" name="gender" ng-model="st.gender" checked value="Nam" class="form-check-input">
+                                                        Nam &nbsp;
+                                                    </label>
+                                                    <label for="female" class="form-check-label">
+                                                        <input type="radio" id="female" name="gender" value="Nu" ng-model="st.gender" class="form-check-input">
+                                                        Nữ &nbsp;
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group col-lg-6 col-md-12 col-sm-12 col-12">
+                                                <label>Ngày sinh</label>
+                                                <input type="date" class="form-control" name="birthday" ng-model="st.birthday" placeholder="dd/mm/yyyy">
+                                                <span ng-show="formdk.birthday.$invalid" style="font-size: 10px; color: red;">Vui lòng nhập vào trường này!</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row ">
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <input type="checkbox"> <label for=" ">I'm not a robot</label>
+                                                <button class="btn btn-primary float-right" ng-click="insert()">Đăng kí</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <a href="login.html">Click here to login</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .btn {
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 60%;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+body {
+    color: #616971;
+}
+
+.top-bar {
+    background: #FF8243;
+    height: 2.8rem;
+    padding: .5rem 0;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.top-bar h5 {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.navbar-brand img {
+    height: 3rem;
+}
+
+.page-footer img {
+    height: 5rem;
+}
+
+.navbar {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+    z-index: 1;
+}
+
+.nav-item {
+    padding: .1rem;
+}
+
+.nav-link {
+    color: #5b5556 !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #4981b3!important;
+}
+
+.navbar-toggler {
+    color: black;
+}
+
+#carousel {
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+}
+
+.carousel-inner {
+    max-height: 38rem !important;
+}
+
+.carousel-item-prev,
+.carousel-item-next,
+.carousel-item.active {
+    transition: transform 1.2s ease;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
+
+.bg-custom {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 1rem;
+}
+
+.carousel-caption h1 {
+    font-size: 2.8rem;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+}
+
+.carousel-caption h3 {
+    font-size: 1.3rem;
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+}
+
+.border-primary {
+    border-top: .2rem solid #4981b3 !important;
+}
+
+.btn-sm {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-width: medium;
+}
+
+.btn-danger {
+    background-color: #ac2615;
+    border: .1rem solid #ac2616;
+}
+
+.btn-primary {
+    background-color: #4981b3;
+    border: .1rem solid #4981b3;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #68a0d2 !important;
+    border: .1rem solid #68a0d2 !important;
+}
+
+article p {
+    color: #325288;
+}
+
+.list-unstyled a,
+p {
+    color: #FAEEE7;
+    text-decoration: none;
+}
+
+.list-unstyled a:hover {
+    color: #FF6464;
+    text-decoration: none;
+}
+
+.icon a {
+    color: white;
+}
+
+.icon a :hover {
+    color: #FFA1C9;
+}
+
+
+/*-- Fixed Background Image --*/
+
+.fixed-background {
+    position: relative;
+    width: 100%;
+    z-index: 1000!important;
+    padding: 10rem 0;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+}
+
+.fixed {
+    background-image: url('../img/matrix.jpg');
+    position: fixed;
+    z-index: -999!important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.customers-box h2 {
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+}
+
+.customers-box .mb-4 {
+    text-align: center;
+}
+
+.customers-box {
+    text-align: center;
+}
+
+.customers-box h2 {
+    font-size: 26px;
+}
+
+.diachi a {
+    color: black;
+}
+
+.new p:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.new h4:hover {
+    cursor: pointer;
+}
+
+.end h1,
+p:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.touch-line {
+    padding: 40px 0px;
+    background: #1273eb;
+    position: relative;
+    margin-top: 90px;
+}
